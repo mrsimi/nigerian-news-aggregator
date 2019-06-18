@@ -1,0 +1,26 @@
+﻿@model IEnumerable<NigerianNewsAggregator.Controllers.NewsInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<div>
+   
+
+@*<h3 class="error-code">@ViewData["Error"]</h3>
+    </div>*@
+
+
+@if (String.IsNullOrEmpty(ViewData["Error"].ToString()))
+{
+    foreach (var item in Model)
+    {
+<div class="newscontent">
+    <span class="date">@Html.DisplayFor(modelitem => item.Date)</span><br />
+    <span class="header">@Html.DisplayFor(modeitem => item.Title)</span><br />
+    <p class="summary">@Html.DisplayFor(modelitem => item.Summary)</p><br />
+    <!-- <button class="readbtn" type="submit" formaction="@item.Link">Read more</button> -->
+    <a href="@item.Link" class="readbtn">Read more </a>
+</div>
+    }
+}
