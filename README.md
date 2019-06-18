@@ -5,4 +5,6 @@ A news aggregator website of nigerian news. In this version there are only 6 web
 [AgilitySharp](https://anglesharp.github.io/) was the choice of tooling for web scraping and [SyndicationFeed](https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.syndication.syndicationfeed)for consuming RSS feeds
 <Enter>
 
+To run it do `dotnet restore`  then `dotnet run`
+
 Feel free to play around with it. Happy coding!
