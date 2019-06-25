@@ -33,7 +33,7 @@ namespace NigerianNewsAggregator.Services
                     Link = item.QuerySelector(siteInfo.LinkClass).GetAttribute("href"),
                     Date = item.QuerySelector(siteInfo.DateClass).TextContent
                 };
-
+                
                 newsInfoDb.Add(eachNews);
             }
 
