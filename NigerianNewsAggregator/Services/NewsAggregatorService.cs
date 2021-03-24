@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.ServiceModel.Syndication;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using AngleSharp;
-using AngleSharp.Dom;
-using Microsoft.EntityFrameworkCore.Query;
 using NigerianNewsAggregator.Controllers;
 
 namespace NigerianNewsAggregator.Services
