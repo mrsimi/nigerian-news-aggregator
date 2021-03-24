@@ -8,11 +8,13 @@ namespace NigerianNewsAggregator.Services
     public class Utility
     {
         public string Url { get; set; }
+        public string ArticleImage { get; set; }
         public string NewsSectionClass { get; set; }
         public string  TitleClass { get; set; }
         public string  SummaryClass { get; set; }
         public string DateClass { get; set; }
         public string  LinkClass { get; set; }
+        public string Source { get; set; }
     }
 
     public class UtilityFunctions
@@ -29,7 +31,8 @@ namespace NigerianNewsAggregator.Services
                     TitleClass = ".entry-title",
                     SummaryClass = ".entry-content",
                     LinkClass = ".rtp-read-more-link",
-                    DateClass = ".entry-date"
+                    DateClass = ".entry-date",
+                    Source = "Vanguard - national news"
                 },
 
                 new Utility
@@ -39,7 +42,8 @@ namespace NigerianNewsAggregator.Services
                     TitleClass = ".seg-title",
                     SummaryClass = ".seg-summary",
                     DateClass = ".seg-time",
-                    LinkClass = "a"
+                    LinkClass = "a",
+                    Source = "Punchng"
                 },
 
                 new Utility
@@ -49,7 +53,8 @@ namespace NigerianNewsAggregator.Services
                     TitleClass = ".entry-title.td-module-title",
                     SummaryClass =".td-excerpt",
                     DateClass = ".entry-date",
-                    LinkClass ="a"
+                    LinkClass ="a",
+                    Source = "Thisdaylive"
                 },
 
                 new Utility
@@ -59,7 +64,8 @@ namespace NigerianNewsAggregator.Services
                     TitleClass = ".a-story-title",
                     SummaryClass = ".a-story-content",
                     DateClass = ".a-story-meta",
-                    LinkClass = "a"
+                    LinkClass = "a",
+                    Source = "PremiumTimesng"
                 },
 
                 new Utility
@@ -69,7 +75,8 @@ namespace NigerianNewsAggregator.Services
                     TitleClass = ".jeg_post_title",
                     SummaryClass = ".jeg_post_excerpt",
                     DateClass = ".jeg_meta_date",
-                    LinkClass = "a"
+                    LinkClass = "a",
+                    Source = "Thenationonlineng"
                 }
             };
 

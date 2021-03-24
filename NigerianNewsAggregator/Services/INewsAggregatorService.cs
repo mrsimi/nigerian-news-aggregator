@@ -1,5 +1,6 @@
 ﻿using AngleSharp.Dom;
 using NigerianNewsAggregator.Controllers;
+using NigerianNewsAggregator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,6 @@ namespace NigerianNewsAggregator.Services
         
         Task<List<NewsInfo>> GetNewsAsync(Utility siteInfo);
 
-        List<NewsInfo> GetNewsFromRSS(string url);
+        List<NewsInfo> GetNewsFromRSS(string url, string source);
     }
 }

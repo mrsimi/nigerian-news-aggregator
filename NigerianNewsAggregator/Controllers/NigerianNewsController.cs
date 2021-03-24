@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NigerianNewsAggregator.Models;
 using NigerianNewsAggregator.Services;
 using System;
 using System.Collections.Generic;
@@ -47,7 +48,7 @@ namespace NigerianNewsAggregator.Controllers
             }
             foreach (var site in availableRSSFeedSites)
             {
-                var aggregateNews = _service.GetNewsFromRSS(site);
+                var aggregateNews = _service.GetNewsFromRSS(site, "SaharaRepoters");
                 newsAggregatedDb.AddRange(aggregateNews);
             }
 
